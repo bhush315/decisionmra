@@ -28,3 +28,31 @@ function ticketPrice(age) {
 console.log(ticketPrice(10)); 
 //console.log(ticketPrice(15)); 
 //console.log(ticketPrice(25)); 
+
+
+
+///////////////// Fibonacci Sequence
+
+function fibonacci(n) {
+    if (n < 0) return undefined; 
+    if (n === 0) return 0;
+    if (n === 1) return 1;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+
+console.log(fibonacci(6)); 
+
+
+
+////////////////////////// Power function
+
+
+function power(base, exponent) {
+    if (exponent < 0) return 1 / power(base, -exponent); 
+    if (exponent === 0) return 1; 
+    return base * power(base, exponent - 1);
+}
+
+
+console.log(power(2, 3)); 
